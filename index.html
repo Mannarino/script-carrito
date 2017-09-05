@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="fontawesome@*" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+    <title> Script Moises Mannarino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    
+    <section class="catalog">
+      <header>
+       <h1 data-color="red">Productos</h1>
+      </header>
+    </section>
+    <aside class="cart cart--hidden">
+      <i class="cart__button fa fa-shopping-cart"></i>
+      <h1>Items</h1>
+      <p class="total"> cantidad de productos <span class="cart__list"> </span></p>
+      <p class="total">
+        Total ar$        <strong class="cart__total">---</strong>
+      </p>
+      <button class="save">comprar</button>
+      <button class="borrar">borrar</button>
+    </aside>
+    <script id="catalog__item__template" type="text/html">
+      <article class="catalog__item">
+       <img src="http://lorempixel.com/200/200/sports/" />
+        <div class="catalog__item__data">
+          <h1 class="title">Producto</h1>
+          <p class="description">Descripcion</p>
+          <p class="price">
+            ar$<span>999</span>
+          </p>
+          <button class="agregarrr">agregar</button>
+        </div>
+      </article>
+    </script>
+    
+    <!-- primero jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    
+    <!-- luego mi implementación -->
+    
+    <script src="Listado.js"></script>
+    
+  </body>
+
+</html>
